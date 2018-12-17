@@ -6,6 +6,10 @@ http.createServer(function(request,response){
     console.log('request come',request.headers.host)
     if(request.url==='/'){
         const html=fs.readFileSync('test.html')
+        // response.writeHead(200,{
+        //     'Content-Type':'text/html',
+        // })
+        // response.end(html)
         response.writeHead(200,{
             'Content-Type':'text/html',
             'Content-Encoding':'gzip'

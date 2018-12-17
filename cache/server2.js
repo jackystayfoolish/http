@@ -9,6 +9,6 @@ http.createServer(function(request,response){
         'Access-Control-Max-Age':'1000'
     })
     response.end('123')
-}).listen(8887)
+}).listen(8889)
 
-console.log('server listen on 8887')
+console.log('server listen on 8889')

@@ -12,19 +12,13 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-       <img src="/test1.jpg" alt="">
-       <img src="/test2.jpg" alt="">
-       <img src="/test3.jpg" alt="">
-       <img src="/test4.jpg" alt="">
-       <img src="/test5.jpg" alt="">
-       <img src="/test6.jpg" alt="">
-       <img src="/test7.jpg" alt="">
-       <img src="/test11.jpg" alt="">
-       <img src="/test12.jpg" alt="">
-       <img src="/test13.jpg" alt="">
-       <img src="/test14.jpg" alt="">
-       <img src="/test15.jpg" alt="">
-       <img src="/test16.jpg" alt="">
-       <img src="/test17.jpg" alt="">
+        <div>data is: <span id="data"></span></div>
+        <script>
+       fetch('/data').then(function(resp){
+            return resp.text()
+       }).then(function(text){
+           document.getElementById('data').innerText=text
+       })
+        </script>
     </body>
 </html>

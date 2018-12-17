@@ -12,7 +12,8 @@ http.createServer(function(request,response){
         response.end(html)
     }else{
         response.writeHead(200,{
-            'Content-Type':'image/jpg'
+            'Content-Type':'image/jpg',
+            // 'Connection':'close'
         })
         response.end(img)
     }
